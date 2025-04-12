@@ -1,0 +1,86 @@
+.product-details-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px ;
+  }
+  
+  .product-details {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .product-image {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-info {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .product-info h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .price {
+    font-size: 20px;
+    color: #b12704; /* Flipkart's price color */
+    margin: 10px 0;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: rgb(151, 145, 145); /* Default color for empty stars */
+}
+
+.star.filled {
+    color: gold; /* Full stars in gold color */
+}
+
+.star.half-filled {
+    position: relative;
+    color: rgb(181, 174, 174); /* Light gray base color */
+}
+
+.star.half-filled::before {
+    content: "★";
+    position: absolute;
+    width: 50%; /* Half-filled star effect */
+    overflow: hidden;
+    color: gold;
+}
+
+  
+  .description {
+    margin: 10px 0;
+  }
+  
+  .category {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .add-to-wishlist {
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Yellow color for Add to Wishlist */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black; /* Text color */
+}
+
+.add-to-wishlist:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
